@@ -1,4 +1,4 @@
-
+/* 
 
 /* Reset & base */
 
@@ -7,26 +7,27 @@ body {
     height: 100%; 
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
     color: #222;
-    
+
 
    }
 
-.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+.courses-container{ width: 90%; max-width: 1200px; margin: 0 auto;
+ }
 
-/* Utility */
+/* Utility 
 
 
-/* NAV */
-#main-header { background: #fff; border-bottom: 1px solid #eee; }
+/* NAV 
+.main-header { background: #fff; border-bottom: 1px solid #eee; }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 16px; }
 .logo img { height: 42px; display: block; }
 .nav-menu { display: flex; gap: 18px; list-style: none; align-items: center; }
 .nav-menu a { text-decoration: none; color: #333; padding: 8px 10px; font-weight: 500; }
+.nav-menu a:hover { background: #50bacc; border-radius: 6px; }
 
 
-/* HERO */
+/* HERO 
 .hero {
-  background-image: url('Group\ Photo\ 1.jpg');
   background-size: cover;
   background-position: center;
   min-height: 680px;
@@ -39,7 +40,7 @@ body {
 .hero h1 { font-size: 48px; line-height: 1.05; text-shadow: 0 4px 18px rgba(0,0,0,0.45); margin-bottom: 10px; }
 .hero-sub { font-size: 20px; margin-bottom: 24px; opacity: 0.95; }
 
-/* CTA Buttons */
+/* CTA Buttons 
 .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
 .btn {
   display: inline-flex; align-items:center; gap:10px; text-decoration:none; border-radius:8px; padding: 12px 22px; font-weight:600;
@@ -47,23 +48,22 @@ body {
 }
 
 
-/* ABOUT (grid 2 columns) */
+/* ABOUT (grid 2 columns) 
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 0; align-items: center; background: #f5f5f5; }
  h2 { font-size: 28px; margin-bottom: 6px; }
-h3 { font-size: 20px; margin-bottom: 14px; }
+h3 { font-size: 29px; margin-bottom: 14px; }
  p { color: #333; line-height: 1.6; margin-bottom: 12px; }
- img { width:100%; border-radius:8px; display:block; }
+ 
 
-/* COURSES (grid 3 columns) */
+/* COURSES (grid 3 columns) 
 .courses { padding: 60px 0; }
 .section-header { text-align:center; margin-bottom: 24px; }
 .course-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .course-card { background:#fff; border-radius:8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding:16px; display:flex; flex-direction:column; gap:12px; }
-img { width:100%; height:170px; object-fit:cover; border-radius:6px; }
 h4 { color:#6B2D8F; }
 p { color:#444; flex:1; }
 
-/* FOOTER */
+/* FOOTER 
 
 .footer { display: grid; grid-template-columns: repeat(4, 1fr); gap:40px; align-items:start;background:#2C1A4D; }
 .logo-white { height:34px; margin-bottom:12px; }
@@ -73,7 +73,7 @@ p { color:#444; flex:1; }
 .footer-links a { color:#fff; text-decoration:none; display:block; margin:6px 0; opacity:0.95; }
 .location { color:#00BFA5; text-decoration:none; font-weight:600; display:inline-block; margin-top:8px; }
 
-/* Copyright */
+/* Copyright 
 .copyright {
      text-align:center; 
      color:rgba(255,255,255,0.7); 
@@ -81,4 +81,242 @@ p { color:#444; flex:1; }
      border-top:1px solid rgba(255,255,255,0.06); 
      margin-top:20px;
  }
+
+*/
+ 
+.body{
+  margin: 0px auto;
+  
+}
+
+.main-header{
+  background-color: white;
+}
+.nav-container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  gap: 50px;
+}
+
+.nav-menu{
+  display: flex;
+  text-decoration: none;
+  margin-left: 170px;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size:15px;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-top: 35px;
+}
+
+a:hover{
+  color: lightblue;
+}
+
+.hero{
+  text-align: center;
+  background-position: center;
+  
+}
+.hero-buttons a{
+ 
+  display: flex;
+  gap: 20px;
+}
+
+h1{
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: #222;
+}
+
+p{
+  
+  font-weight: bold;
+}
+
+.hero-buttons {
+      display: flex; 
+      gap: 14px; 
+      justify-content: center; 
+      flex-wrap: wrap; 
+      margin-top: 20px;      
+}
+
+/* Hero button 1*/
+.btn-1{
+  background-color: purple;
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  width: 150px;
+  text-align: center;  
+}
+
+.btn-1:hover{
+  background-color:  whitesmoke;
+  color: purple;
+}
+
+/* Hero button 1*/
+.btn-2{
+  background-color:rgb(146, 146, 39);
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  width: 150px;
+  text-align: center;
+  
+  
+}
+
+.btn-2:hover{
+  background-color:  whitesmoke;
+  color: purple;
+}
+
+/* Hero button 1*/
+.btn-3{
+  background-color: rgb(146, 146, 39);
+  padding: 7px;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+.btn-3:hover{
+  background-color:  #002A48;
+}
+
+ a{
+   font-size: large;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*About section*/
+
+.about-container{
+  background-color: rgb(245, 247, 248);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about-text{
+  margin-left: 190px;
+}
+
+/*About heading*/
+.about-text h2{
+  color: #6B2D8F;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-text h3{
+  color: #00BFA5;
+  font-size: 24px;
+}
+
+.about-text p{
+  color: rgb(141, 134, 134);
+  line-height: 1.6;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+.more-button {
+  background-color: rgb(198, 198, 43);
+  padding: 6px;
+  color: white;
+  margin: 3px;
+  border-radius: 5px;
+  width: 5%;
+}
+.more-button:hover{
+  background-color: #05548c;
+}
+
+/*About Image desig*/
+
+.about-image{
+     margin-bottom:25px;
+     
+}
+
+/*Features Design*/
+.courses-container{
+  margin-top:60px;
+  
+  
+}
+
+.course-features{
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 30px;
+  padding: 20px;
+  
+}
+
+
+
+.feature-button {
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.feature-button:hover{
+  background-color: #002A48;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.courses-container p{
+    color: teal;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.courses-container h2{
+  text-align: center;
+  color: purple;
+  font-size: 40px;
+}
+
+.course-features h4{
+  color: purple;
+}
+
+/*Footer Design*/
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4,  1fr);
+  gap: 20px;
+
+}
+
+
+
+
+
+
+
+
 
