@@ -22,3 +22,19 @@ console.log(users)
 
 users.unshift("Doruba")
 console.log(users)
+
+// REMOVING ELEMENTS AT THE BEGINNING AND AT THE END
+//USING POP() AND SHIFT()
+users.pop("Medina")
+console.log(users)
+
+users.shift("Doruba")
+console.log(users)
+
+//USING SPLICE() TO REMOVE OR REPLACE ELEMENTS
+users.splice(2,1)
+console.log(users)
+
+//FINDING DATA
+let indexOfWilla = users.indexOf("Willa")
+console.log(indexOfWilla)
