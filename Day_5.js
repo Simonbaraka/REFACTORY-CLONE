@@ -38,3 +38,10 @@ console.log(users)
 //FINDING DATA
 let indexOfWilla = users.indexOf("Willa")
 console.log(indexOfWilla)
+
+let ages =[23,12,14,16,18,20]
+console.log(ages.reverse())
+console.log(ages.sort())
+console.log(users.sort())
+
+
