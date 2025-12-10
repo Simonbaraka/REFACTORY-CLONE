@@ -36,3 +36,14 @@ console.log(filterNames)
 
 
 //INTRODUCTION OF SCOPE
+
+function Tonage(ton){
+    if(ton>1000){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(Tonage(100))
