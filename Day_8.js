@@ -53,3 +53,28 @@ console.log(Object.keys(products))
 
 //Accessing the entries or Key-value Pairs
 console.log(Object.entries(products))
+
+
+let SalesRecord = {
+    "produceName": "Frozen Meat",
+    "tonnageinkg":1000,
+    "amountPaid":200000,
+    "buyerName":"Baraka"
+}
+
+console.log(Object.entries(SalesRecord))
+
+for(const sales in SalesRecord){
+    console.log(SalesRecord[sales])
+}
+
+for(const val in SalesRecord){
+    console.log(Object.values(SalesRecord))
+}
+
+
+// Adding new Key-Value pairs to the object
+SalesRecord.isCreditsale=true
+SalesRecord.dueDate = new Date("2025-12-30")
+
+console.log((SalesRecord))
