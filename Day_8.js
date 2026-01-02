@@ -78,3 +78,15 @@ SalesRecord.isCreditsale=true
 SalesRecord.dueDate = new Date("2025-12-30")
 
 console.log((SalesRecord))
+
+// Check Validation 
+let val = Object.keys(SalesRecord)
+console.log((val))
+
+for (let item of val){
+    if(item.isCreditsale === Number){
+        console.log("correct")
+    }else if (item.produceName===String){
+        console.log("wrong")
+    }
+}
