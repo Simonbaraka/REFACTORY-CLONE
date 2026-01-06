@@ -19,7 +19,7 @@ console.log(Staff)
 console.log(locationmade)
 console.log(loca)
 
-//THE SPREAD SYNTAX
+//THE SPREAD SYNTAX (...)
 
 const original =["Beans","Maize","millet","Milk"]
 const stock =["Bananas","Grapes","Mangoes","Orange"]
@@ -56,8 +56,12 @@ let CreditSales = {nameofbuyer:"Paul",Amountpaid:10000,amountDue:20000}
 let {nameofbuyer,amountDue} = CreditSales
 console.log(nameofbuyer)
 
+//ADDING FIELDS USING SPREAD OPERATOR(...)
 const procurement ={
     produce:"maize",
     tons: 500
 }
+
+const cop = {...procurement,amount:30000}
+console.log(cop)
 
