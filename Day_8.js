@@ -88,7 +88,7 @@ for (let item of val) {
   }
 }
 
-const price =3000
+const price =3000;
 function greet(name){
     return name;
 }
