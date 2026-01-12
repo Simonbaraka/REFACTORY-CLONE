@@ -1,0 +1,624 @@
+/*!
+Theme Name: Ohio-Child
+Theme URI: http://ohio.colabr.io/
+Author: Colabrio
+Author URI: http://colabr.io/
+Description: Ohio is a WordPress theme bundled with premium plugins to build a modern and functional website.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: ohio
+Text Domain: ohio-child
+Tags: ajax, customizer, ecommerce, portfolio, minimal, page builder, responsive, multipurpose, shop, store, woocommerce, wpml
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+:root {
+	--wp-dark-mode-bg--e-global-color-08c2717: #002A48 !important;
+}
+
+p {
+	margin: 0 0 12px;
+}
+
+h2 {
+	font-size: clamp(var(--clb-titles-h2-font-size-min), calc(2.15vw + 0.25rem), var(--clb-titles-h2-font-size));
+}
+
+h3, h4, h5 {
+	margin-bottom: 10px;
+}
+
+figcaption {
+	text-align: left;
+}
+
+table td {
+	padding: 5px 10px !important;
+	text-align: left !important;
+}
+
+table tr:first-child {
+	color: #fff;
+	background-color: #0F5395;
+}
+
+table tr:nth-child(even) {
+	background-color: #F4F7FA;
+}
+
+button.icon-button {
+	color: #fff;
+}
+
+.wp-block-button a {
+	font-size: 16px;
+	padding: 5px 20px;
+	background-color: #0F5395;
+	margin-bottom: 20px;
+}
+
+.wp-block-button a:hover {
+	color: #fff;
+	background-color: #38bfc3;
+}
+
+.nav-item a .home {
+	display: none;
+}
+
+.button, a.button {
+	border-width: 1px;
+	min-height: 40px;
+}
+
+.button.-text:hover {
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+
+blockquote {
+    padding: 15px 20px !important;
+    background-color: #ebf9f9;
+    border-left: 5px solid #38BFC3 !important;
+}
+
+blockquote p {
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.header ul li a {
+	font-weight: 700;
+}
+
+.right-part button {
+	border-radius: 50% !important;
+}
+
+.nav-item a {
+	font-family: "Helvetica";
+	font-size: 16px !important;
+}
+
+label + * {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.elementor-message {
+	color: #fff;
+}
+
+.elementor-field-label {
+	display: none;
+}
+
+.elementor-heading-title {
+	line-height: 1.3 !important;
+}
+
+.elementor-widget-text-editor:last-child p {
+	margin-bottom: 15px !important;
+}
+
+.breadcrumb-holder {
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+.breadcrumb-holder a {
+	display: none;
+}
+
+.breadcrumb-holder li:first-child {
+	padding-right: 5px;
+}
+
+.elementor-loop-container .elementor {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.elementor-pagination a {
+	color: #fff;
+	background-color: #442244;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 0 5px;
+}
+
+.elementor-pagination .current,.elementor-pagination a:hover {
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #38BFC3;
+}
+
+.has-submenu-icon {
+	opacity: 1;
+}
+
+.wp-dark-mode-floating-switch {
+	right: 30px !important;
+	bottom: 120px !important;
+}
+
+.elementor-location-header .elementor-nav-menu li {
+	margin: 0 !important;
+}
+
+.elementor-location-header .elementor-nav-menu a {
+	color: #fff;
+	fill: #fff;
+	font-size: 18px;
+	padding: 8px 12px !important;
+}
+
+.elementor-location-header .elementor-nav-menu a:hover {
+	color: #38BFC3;
+	fill: #38BFC3;
+}
+
+.elementor-location-header .elementor-nav-menu .sub-arrow {
+	padding-left: 5px !important;
+}
+
+.elementor-location-header .elementor-nav-menu svg {
+	color: #fff;
+}
+
+.elementor-location-header .elementor-nav-menu ul {
+	background-color: #F4F7FA;
+}
+
+.elementor-location-header .elementor-nav-menu .has-submenu-icon {
+	display: none;
+}
+
+.elementor-location-header .elementor-nav-menu .sub-menu a {
+	color: #000;
+}
+
+.elementor-location-header .elementor-nav-menu .sub-menu a:hover {
+	color: #fff;
+	background-color: #38BFC3;
+}
+
+.elementor-counter p.elementor-counter-title {
+	line-height: 28px !important;
+	margin-top: 10px;
+}
+
+.elementor-widget-search .e-search-input {
+	height: 40px !important;
+	padding: 10px !important;
+	min-height: unset !important;
+}
+
+.elementor-widget-search .e-search-input-wrapper {
+	margin-top: 0;
+}
+
+.elementor-widget-search .e-search .e-search-submit {
+	height: 40px !important;
+	padding: 0 15px !important;
+	min-height: unset !important;
+}
+
+.card-details {
+	padding: 10px 15px !important;
+}
+
+.blog-item .card-details .title a:hover {
+	color: #38bfc3;
+}
+
+.blog-item .card-details .button {
+	font-size: 16px;
+	margin-top: 0;
+}
+
+.blog-item .card-details .button:hover {
+    color: #663367 !important;
+    background: transparent;
+    box-shadow: none !important;
+}
+
+.blog-item.-layout1 .image-holder img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.related .blog-item img {
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.related .blog-item .title {
+	font-size: 18px !important;
+}
+
+.related .blog-item .card-details {
+	padding-top: 0 !important;
+}
+
+.related .blog-item .button {
+	margin-top: 0 !important;
+	font-size: 14px;
+}
+
+.tabs-content button a {
+	color: #fff !important;
+	font-size: 16px;
+	font-family: 'Century Gothic';
+}
+
+.tabs-content-item.active {
+	padding: 0 10px;
+}
+
+.tabs:not(.-vertical) .tabs-content {
+	margin-top: 0;
+}
+
+.tabs.-with-button .tabs-nav-line {
+	background-color: #0F5395;
+}
+
+.tutor-meta {
+	gap: 0;
+}
+
+.tutor-meta>* {
+	font-size: 16px;
+}
+
+.tutor-accordion-item-header {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.tutor-accordion-item-body {
+	margin: 0 !important;
+}
+
+.etlms-course-widget ul {
+	margin-top: 5px;
+}
+
+.etlms-course-widget h3 {
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.etlms-course-content h3 {
+	font-size: 17px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.etlms-course-content .tutor-tab {
+	padding: 0;
+}
+
+.etlms-course-content .tutor-mt-40 {
+	margin: 0;
+}
+
+.etlms-course-content .tutor-mb-32 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.tutor-course-details-tab .tutor-nav {
+	display: none;
+}
+
+.page-id-28 .tabs.-with-button .tabs-nav-line {
+	background-color: #38BFC3;
+}
+
+.page-headline .holder {
+	padding-bottom: 30px;
+}
+
+/*.page-headline::after {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(0, 42, 72, 1) 95%);
+}*/
+
+.page-headline .post-meta-holder {
+	margin-top: 7px;
+}
+
+.page-id-18 .icon-box {
+	padding: 20px;
+	background-color: #fff;
+}
+
+.programs .icon-box {
+	padding: 20px;
+	background-color: #fff;
+}
+
+.programs .icon-box img,
+.criteria .icon-box img {
+	display: block;
+	height: 70px;
+	max-height: 70px !important;
+}
+
+.criteria .icon-box-heading {
+	font-weight: 400;
+}
+
+.page-id-34 .icon-box {
+	background-color: #fff;
+}
+
+.page-id-34 .icon-box-content {
+	padding: 0 15px 20px;
+}
+
+.page-id-2 .icon-group,
+.page-id-30 .icon-group,
+.page-id-34 .icon-group,
+.page-id-82 .icon-group {
+	display: block;
+}
+
+.page-id-2 .icon-box img,
+.page-id-34 .icon-box img,
+.page-id-82 .icon-box img,
+.events .icon-box img {
+	display: block;
+	height: 200px;
+	max-height: 200px !important;
+	width: 100%;
+	object-fit: cover;
+}
+
+.page-id-82 .icon-box .icon-box-heading {
+	margin-top: 0 !important;
+}
+
+.page-id-82 .icon-box-content {
+	padding: 15px 15px 25px;
+	background-color: #fff;
+}
+
+.page-id-80 .icon-box p,
+.page-id-2470 .icon-box p,
+.page-id-2517 .icon-box p {
+	margin-top: 10px;
+}
+
+.elementor-image-box-img img {
+	height: 220px !important;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.menu-optional .button-group .button {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.elementor-image-box-content {
+	padding: 15px;
+	margin-top: -10px;
+	background-color: #fff;
+}
+
+.accordion-item {
+	margin-bottom: 12px !important;
+}
+
+.accordion-item.active {
+	margin-bottom: 0 !important;
+}
+
+.accordion-item .accordion-collapse .accordion-body > p {
+	margin-bottom: 12px;
+}
+
+.accordion-item .accordion-collapse .accordion-body > p:last-child {
+	margin-bottom: 0;
+}
+
+.accordion-item.active .accordion-button,
+.accordion-item:hover .accordion-button {
+	background-color: #663367 !important;
+}
+
+.accordion-item.active .accordion-button .accordion-header,
+.accordion-item:hover .accordion-button .accordion-header {
+	color: #fff !important;
+}
+
+.ue-item-icon-wrapper {
+	z-index: 1;
+}
+
+.ue-testimonial-box .ue-title {
+	color: #38BFC3;
+}
+
+.ue-testimonial-box .ue-subtitle {
+	font-size: 14px;
+}
+
+.ue-testimonial-box .ue-pointer {
+	background-color: #38BFC3 !important;
+}
+
+.ue-testimonial-box .ue-image img {
+	width: 70px !important;
+	border-radius: 50% !important;
+	border: 2px solid #38BFC3;
+}
+
+.ue-testimonial-box .ue-image-spacing {
+	width: 10px !important;
+}
+
+.ue-testimonial-box .ue-testimonial-text {
+	min-height: 120px;
+	padding: 10px 15px !important;
+	background-color: #F4F7FA !important;
+}
+
+.elementor-testimonial .elementor-testimonial__content {
+	min-height: 140px;
+	background-color: #F4F7FA !important;
+}
+
+.elementor-testimonial .elementor-testimonial__text {
+	font-size: 16px !important;
+	line-height: 24px;
+	font-style: normal !important;
+}
+
+.page-id-82 .e-gallery-item {
+	padding: 10px;
+	background-color: #fff;
+}
+
+.square_icon_box .ue-icon {
+	margin-top: -25px;
+}
+
+.gt_switcher {
+	position: absolute;
+	z-index: 2;
+}
+
+#foundational, #advanced, #apprenticeship {
+  scroll-margin: 50px;
+}
+
+.elementor-location-footer h5,
+.elementor-location-footer h6 a {
+	color: #38bfc3 !important;
+}
+
+.elementor-location-footer .elementor-nav-menu a {
+	color: #fff !important;
+	padding: 0 0 5px !important;
+}
+
+.elementor-location-footer .elementor-nav-menu a:hover {
+	color: #38BFC3 !important;
+}
+
+.elementor-location-footer .elementor-icon-list-icon svg {
+	fill: #38bfc3;
+}
+
+.mdp-readabler-trigger-button-box.top-right {
+	top: 15px !important;
+}
+
+.card.-metro:not(.-no-media) .image-holder {
+	padding-top: 220px;
+	padding-bottom: 0;
+}
+
+.card.-metro:not(.-no-media) .image-holder img, .card.-metro:not(.-no-media) .image-holder iframe {
+	height: 220px;
+}
+
+@media (max-width: 767px) {
+	.page-headline .title {
+		font-size: 40px !important;
+		line-height: 40px !important;
+	}
+
+	button.hamburger-button {
+		background-color: transparent !important;
+	}
+
+	.header .slide-in-overlay {
+		right: 15px;
+	}
+
+	.icon-button.hamburger {
+		color: #fff !important;
+		background-color: #C6C628;
+	}
+
+	.icon-button.hamburger:hover {
+		background-color: #0F5395;
+	}
+
+	footer {
+		width: 104.18%%;
+		margin: 0;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+	.uc_counter_box {
+		min-height: 125px;
+	}
+
+	.page-id-18 .icon-box {
+		min-height: 250px;
+	}
+
+	.page-id-34 .square_icon_box  {
+		min-height: 270px !important;
+	}
+
+	.page-id-16 .elementor-image-box-content {
+		min-height: 170px;
+	}
+
+	.programs .icon-box {
+		min-height: 270px;
+	}
+
+	.card-details {
+		min-height: 235px;
+	}
+}
+
+
+@media screen and (min-width: 1180px) {
+	.full-width, .page-headline .-full-w, .breadcrumb-holder, .page-container .e-con>.e-con-inner, .page-container .-full-w {
+        max-width: 1140px;
+    }
+}
