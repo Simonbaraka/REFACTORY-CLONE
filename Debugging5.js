@@ -50,6 +50,3 @@ function program2_simpleLogger() {
   logger.error("Failed to load configuration");
 }
 program2_simpleLogger();
-
-let come = "Hello  my name is ....";
-console.log(come);
