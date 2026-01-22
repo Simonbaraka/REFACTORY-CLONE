@@ -28,3 +28,6 @@ let salesObject = [
 
 console.log(salesObject);
 console.dir(salesObject);
+
+//Authentification and cryptograpy  https://www.geeksforgeeks.org/computer-networks/cryptography-and-its-types/
+//https://www.geeksforgeeks.org/computer-networks/cryptography-and-its-types/

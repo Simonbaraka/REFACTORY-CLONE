@@ -29,6 +29,8 @@
 
 // let stringcart = JSON.stringify("cart");
 // localStorage.setItem("cart", stringcart);
+alert("Ensure amount due is not greater than 500000"); // prints out an error messsage
+console.log("This is my JSON file ");
 
 let creditsale = { customer: "Daniel", amount: 3000 };
 let stringcreditsale = JSON.stringify(creditsale);

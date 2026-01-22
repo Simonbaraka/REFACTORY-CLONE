@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f6f8;
+      }
+
+      /* MAIN GRID */
+      .dashboard {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        grid-template-rows: 60px 1fr;
+        grid-template-areas:
+          "sidebar header"
+          "sidebar content";
+        height: 100vh;
+      }
+
+      /* SIDEBAR */
+      .sidebar {
+        grid-area: sidebar;
+        background: #1e1e2f;
+        color: white;
+        padding: 20px;
+      }
+
+      .sidebar h2 {
+        margin-bottom: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+      }
+
+      .sidebar li {
+        padding: 12px 0;
+        cursor: pointer;
+      }
+
+      .sidebar li:hover {
+        background: #333;
+        padding-left: 10px;
+      }
+
+      /* HEADER */
+      .header {
+        grid-area: header;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* CONTENT */
+      .content {
+        grid-area: content;
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      /* CARDS */
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* TABLE */
+      .table-container {
+        grid-column: 1 / -1;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .dashboard {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "header"
+            "content";
+        }
+
+        .sidebar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>Admin</h2>
+        <ul>
+          <li>Dashboard</li>
+          <li>Orders</li>
+          <li>Meals</li>
+          <li>Users</li>
+          <li>Reports</li>
+          <li>Logout</li>
+        </ul>
+      </aside>
+
+      <!-- HEADER -->
+      <header class="header">
+        <h1>Dashboard</h1>
+        <div class="user">👤 Admin</div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main class="content">
+        <!-- CARDS -->
+        <div class="card">
+          <h3>Total Sales</h3>
+          <p>$12,500</p>
+        </div>
+
+        <div class="card">
+          <h3>Orders</h3>
+          <p>320</p>
+        </div>
+
+        <div class="card">
+          <h3>Meals</h3>
+          <p>45</p>
+        </div>
+
+        <div class="card">
+          <h3>Users</h3>
+          <p>18</p>
+        </div>
+
+        <!-- TABLE -->
+        <div class="table-container">
+          <h3>Recent Orders</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Meal</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#001</td>
+                <td>Burger</td>
+                <td>$5</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>#002</td>
+                <td>Pizza</td>
+                <td>$8</td>
+                <td>Pending</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
