@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="type username"
+      />
+      <input
+        type="password"
+        name="password"
+        id="username"
+        placeholder="type password"
+      />
+
+      <button type="=submit">submit</button>
+      <button type="=click">Record Procurement</button>
+    </form>
+
+    <form class="forms">
+      <br />
+      <label>Tonnage :</label>
+      <input type="text" id="tonnage" placeholder="ADD TONNAGE" />
+    </form>
+
+    <!--Using event listeners-->
+    <script>
+      let form = document.querySelector("form");
+      let password = document.querySelector("#password");
+      let username = document.querySelector("#username");
+      let check = document.querySelector("#checkOut");
+
+      form.addEventListener("click", (e) => {
+        e.preventDefault();
+        //getting values from the user
+        const usernameInput = username.value.trim().toLowerCase();
+        const passwordInput = password.value.trim();
+
+        if (usernameInput === "sales agent") {
+          console.error("Access Denied: Sales Agents are not allowed");
+          return;
+        }
+
+        //SENDING DATA TO SERVER
+      });
+
+      let tones = document.getElementById("#tonnage");
+      let tonesvalue = tones.value;
+
+      let fom = document.querySelector("forms");
+
+      fom.addEventListener("click", (e) => {
+        if (typeof tonesvalue === Number) {
+        }
+      });
+    </script>
+  </body>
+</html>
