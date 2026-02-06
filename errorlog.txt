@@ -1,0 +1,3 @@
+Error: user tried to log in multiple times 
+ appendError: user tried to log in multiple times 
+ append
