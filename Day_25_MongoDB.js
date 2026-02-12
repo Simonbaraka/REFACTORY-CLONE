@@ -5,7 +5,7 @@
 */
 
 const mongoose = require("mongoose");
-
+require("dotenv").config(); // helps import secrets from a .env file created
 /*
  ===================================
  DATABASE CONNECTION
@@ -13,7 +13,7 @@ const mongoose = require("mongoose");
 */
 
 // MongoDB connection URI
-const URI = "mongodb://localhost:27017/KGL";
+const URI = process.env.MONGO_URI; //imported URI from env
 
 // Connect using Mongoose
 mongoose

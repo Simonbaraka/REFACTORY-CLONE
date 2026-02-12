@@ -1,0 +1,3 @@
+class KGLerror extends error{
+    
+}
